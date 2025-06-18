@@ -17,13 +17,18 @@ Inserire un bottone che al click faccia il fetch altre 10 mail(sostituendo le al
 */
 
 console.log("...");
+document.getElementById("btnList").addEventListener("click", () => {
+  generateEmail();
+});
 
-document.getElementsByClassName("list").innerHTML = ""
-//ciclo for
-for (let i = 0; i < 10; i++) {
-  callRandomEmail();
+
+function generateEmail() {
+  document.getElementsByClassName("list").innerHTML = ""
+  //ciclo for
+  for (let i = 0; i < 10; i++) {
+    callRandomEmail();
+  }
 }
-
 //genera email da chiamata APi
 
 function callRandomEmail() {
