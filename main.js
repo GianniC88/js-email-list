@@ -26,15 +26,15 @@ function generateEmail() {
   document.getElementsByClassName("list").innerHTML = ""
   //ciclo for
   for (let i = 0; i < 10; i++) {
-    callRandomEmail();
+    RandomEmail();
   }
 }
 //genera email da chiamata APi
 
-function callRandomEmail() {
+function RandomEmail() {
   fetch("https://flynn.boolean.careers/exercises/api/random/mail")
     .then((res) => {
-      console.log(callRandomEmail);
+      console.log(RandomEmail);
 
       return res.json();
       //   oJSON['response']
