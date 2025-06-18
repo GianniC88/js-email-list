@@ -19,6 +19,7 @@ Inserire un bottone che al click faccia il fetch altre 10 mail(sostituendo le al
 console.log("...");
 
 document.getElementsByClassName("list").innerHTML = ""
+//ciclo for
 for (let i = 0; i < 10; i++) {
   callRandomEmail();
 }
@@ -41,15 +42,15 @@ function callRandomEmail() {
 
       // scrivo email
 
-      document.getElementById(
+      document.getElementsByClassName(
         "List"
       ).innerHTML += `<li>${email.response}</li>`;
     });
 }
 
-//generatore di email
 
-//ciclo for
+
+
 
 
 
