@@ -34,7 +34,7 @@ function generateEmail() {
 function RandomEmail() {
   fetch("https://flynn.boolean.careers/exercises/api/random/mail")
     .then((res) => {
-      console.log(RandomEmail);
+
 
       return res.json();
       //   oJSON['response']
